@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap'); /*Tambahan*/ 
+/* reset css */ /*Reset CSS ditaruh di paling atas*/ /*Tambahan*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+/* end of reset css */
+
+html, body { /* Usahakan class diurutkan sesuai urutan di file HTML */
+  height: 100%;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100; /*saya tambah z-index untuk atur posisi. semakin besar angkanya, dia akan berada di paling depan. semakin kecil, akan berad di paling belakang*/
+}
+
+/* navbar */
+nav {
+    color: rgb(230, 55, 55);
+    font-size: 30px; /*Tambahan*/
+    font-weight: bold; /*Tambahan*/
+    background-color: transparent; /*Tambahan*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 1100px; /*Tambahan*/
+    margin: auto; /*Tambahan*/
+    display: flex; /*Tambahan*/
+    justify-content: center; /*Tambahan*/
+}
+
+ul {
+    display: flex;
+    justify-content: center; /*Tambahan*/
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+ul li a {
+    text-decoration: none;
+    color: white; /*Tambahan*/
+    transition: all; /*Tambahan*/
+    transition-duration: 0.5s; /*Tambahan*/
+}
+
+ul li a:hover {
+    color: rgb(230, 55, 55); /*Tambahan*/
+}
+/* end of navbar */
+  
+.viewport-header {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+h1 {
+  font-family: 'Syncopate', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3vw;
+  line-height: 1.2;
+  font-size: 3vw;
+  text-align: center;
+  span {
+    display: block;
+    font-size: 10vw;
+    letter-spacing: -1.3vw;
+  }
+}
+
+/* hero */
+.container-super{
+    width: 1100px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px; /*Tambahan*/
+    color: white; /*Tambahan*/
+}
+.container-super img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.container-super p{
+    color:gray;
+    font-size: 25px;
+    font-weight: 500;
+}
+svg{
+    display: block;
+    margin-bottom: 0;
+}
+/* end of hero */
+
+/* about me */
+.content-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.content-about h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+  
+main {
+  background: rgba(black, 0.66);
+  color: white;
+  position: relative;
+  padding: 1rem;
+}
+  p {
+    max-width: 600px;
+    margin: 1rem auto;
+  }
+
+/* about */
+.container-project {
+    text-align: center;
+    width: 1100px;
+    margin: auto;
+    /* padding-top: 60px; */
+    /* padding-bottom: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.container-project div{
+    display: flex;
+    gap: 50px;
+    width: 800px;
+    line-height: 25px;
+}
+
+.container-project h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* end of about */
+
+/* project */
+.container-project {
+    text-align: center;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+.container-project .boxes {
+    display: flex;
+    flex-wrap: wrap; /*Tambahan*/
+    align-items: center; /*Tambahan*/
+    justify-content: space-evenly; /*Tambahan*/
+    line-height: 25px;
+    width: 90%; /*Tambahan*/
+}
+
+.container-project .boxes .box {
+    border: 1px solid grey;
+    border-radius: 15px;
+    width: 30%; /*Tambahan*/
+    background-color: rgba(16, 14, 14, 0.5); /*Tambahan*/
+    transition-duration: 0.5s; /*Tambahan*/
+}
+
+.container-project .boxes .box:hover { /*Tambahan*/
+  transform: scale(1.2);
+}
+
+.container-project .boxes .box img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.container-project .boxes .box a {
+  text-decoration: none;
+  color: #e9ecef;
+}
+/* End of Project */
+
+/* Contact */
+.container-contact {
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 70px;
+}
+
+.container-contact form {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.container-contact form input, .container-contact form textarea, .container-contact form button {
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+}
+
+.container-contact form button {
+  background-color: #6f6f6f;
+  color: #ffff;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.container-contact form button:hover {
+  background-color: #f6f5f5;
+  color: #54BAB9;
+}
+/* End of Contact */
+
+/* Footer */
+.wave-footer { /*Tambahan*/
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -10;
+  width: 100%;
+  color: transparent;
+}
+
+footer {
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative; /*Tambahan*/
+}
+
+p {
+  text-align: center;
+  color: white; /*Tambahan*/
+  font-weight: bold; /*Tambahan*/
+  font-size: 16px; /*Tambahan*/
+}
+
+footer p a {
+  color: white; /*Tambahan*/
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: #54BAB9;
+}
+/* End of Footer */
